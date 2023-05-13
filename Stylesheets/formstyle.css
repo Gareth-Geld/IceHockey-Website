@@ -1,0 +1,172 @@
+.bdy2 {
+  margin: 0px;
+  min-height: 100vh;
+}
+
+.Containment {
+  position: relative;
+  height: 250vh;
+  background-color: rgb(7, 80, 7);
+}
+
+.Contentform {
+  font-size: 28px;
+  font-family: inherit;
+  line-height: 120%;
+  text-align: center;
+  padding: 50px;
+  color: greenyellow;
+}
+
+.boxCont {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  margin-top: 25px;
+}
+
+.boxCont input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #797979;
+  border-radius: 50%;
+}
+
+.boxCont input:checked ~ .checkmark {
+  background-color: greenyellow;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.boxCont input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.boxCont .checkmark:after {
+  top: 8px;
+  left: 8px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+}
+
+.inputField, .messageBoxer {
+  background-color: transparent;
+  text-shadow: 2px 2px 3px #000000;
+  border-radius: 5px;
+  font-size: 28px;
+  font-family: inherit;
+  color: rgb(217, 255, 0);
+}
+
+.inputField {
+  height: 50px;
+  width: 40%;
+}
+
+.messageBoxer {
+  height: 200px;
+  width: 40%;
+}
+
+.floatRight {
+  float: right;
+}
+
+.margyT15 {
+  margin-top: 15%;
+}
+
+.margyTNeg1 {
+  margin-top: 0%;
+  margin-left: -110px;
+}
+
+.submitbtn {
+  width: 250px;
+  height: 100px;
+  font-size: 60px;
+  font-family: inherit;
+  background-color: black;
+  color: inherit;
+  margin-left: 130%;
+  border-radius: 50px;
+}
+
+.lnkBtn {
+  width: 250px;
+  height: 50px;
+  font-size: 30px;
+  font-family: inherit;
+  background-color: black;
+  color: inherit;
+}
+
+.lnkBtn:hover {
+  background-color: transparent;
+  border-style: solid;
+  border-width: thick;
+  border-color: greenyellow;
+  color: greenyellow;
+}
+
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu-container {
+  display: flex;
+}
+
+.menu-section {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.menu-section h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-section ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.menu-section ul li {
+  list-style: none;
+  padding: 5px;
+}/*# sourceMappingURL=formstyle.css.map */

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="perconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+    <link rel="stylesheet" href="../Stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="../Stylesheets/formstyle.css">
+    <link rel="stylesheet" href="../Stylesheets/posts.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/publisher.js"></script>
+    <script type="text/javascript" src="../js/commenter.js"></script>
+    <title>Fantasy Hockey</title>
+</head>
+<body class=".bdy2">
+    <!-- Just a post being displayed using bootsrap grid -->
+    <div class="Containment" id="Containment">
+        <img class="TV-Static" id="gif" src="../images/static-tv.gif" alt="scanlines">
+        <img class="scanlines" src="../images/scanlines.png" alt="scanlines">
+        <img class="bezel" src="../images/bezel.png" alt="scanlines">
+        <div class="divContent">
+            <h1 class="headerPostP">Daily fantasy hockey picks, projections</h1>
+            <h3 class="post-Heading">Players to watch in key statistical categories for DFS contests podcast analysis</h3>
+            <h4 class="author">by Fantasy Hockey Staff @NHLFantasy</h4>
+            <div class="spacer"></div>
+            <div class="banner"><img class="bannerimg" src="../images/Posts/Post2.jpg" alt="banner"></div>
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col">
+               <p></p>
+                </div>
+                <div class="col-11">
+                    <p class="postContent">NHL.com identifies daily fantasy hockey players to watch in key statistical categories for DFS contests throughout the 2023 Stanley Cup Playoffs. For more coverage, visit NHL.com/Fantasy and subscribe for free to the "NHL Fantasy on Ice" podcast.</p>
+                </div>
+                <div class="col">
+                <p></p>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <!-- Comment section -->
+            <form>
+                <div class="form-group">
+                <label class="comment-lable" for="comment">Please enter a comment Below<span class="blink">.</span></label>
+                <input class="comment-box" id="comment" type="text">
+                <button type="button" class="commentBTN" id="comment" onclick="post()">Comment</button><br/>
+                <div id="commentDisplay"></div>
+                <a href="../News.html" class="btn btn-primary">Go back</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,276 @@
+//Compulsory Task - Capstone Project 3
+
+// I got the aesthetics and images Idea from - 
+// https://www.youtube.com/watch?v=8MXA07BZLqo&ab_channel=NiklasZiermann I knew I wanted todo something like this just wasnt exactly sure how to execute it :) 
+
+
+//Variables
+$MainBackCol:rgb(7, 80, 7);
+$MainCol:greenyellow;
+$SecCol:black;
+$MainHead:70px;
+$SmallFont:22px;
+$HeroHead:100px;
+$btnHead:60px;
+$BoxShadow:2px 2px 3px #000000;
+
+//SCSS Functions
+@mixin middle($pix){
+  margin-left: $pix;
+  margin-right: $pix;
+}
+
+@mixin square($pix){
+  width: $pix;
+  height: $pix;
+}
+
+//added its own body class because this content does not need to scroll down
+.bdy{
+  margin: 0px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+//images
+.abtImg{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+
+//Needed a gap between elements
+.gap{
+  height: 700px;
+}
+
+.section1{
+  padding: 50px;
+}
+
+//Sets background Height and colour
+.divcontainer3{
+  position: relative;
+  height: 1000vh;
+  background-color: $MainBackCol;
+  display: block;
+}
+
+//Content styling
+.divContent{
+  color: $MainCol;
+  padding:90px;
+  font-family: VT323;
+  font-size: $MainHead;
+  text-shadow:$BoxShadow;
+}
+
+//Heading styling for main headings
+.Heading{
+color: $MainCol;
+font-family: VT323;
+font-size: $HeroHead;
+text-shadow:$BoxShadow;
+text-align: center;
+}
+
+//This is styling for paragraphs
+.ContentPara{
+    font-size: $SmallFont;
+    font-family: inherit;
+    line-height: 120%;
+    text-align: center;
+    padding: 10px;
+    color: $MainCol;
+}
+
+//Styling for the images fixed as well as the gif for transition animation
+.scanlines,.bezel,.TV-Static{
+  position: fixed;
+  top:0;
+  width: 100vw;
+  height: 100vh;
+  left:0;
+  pointer-events: none;
+  overflow-y: scroll;
+  background-size: cover;
+  background-position: center;
+}
+
+.TV-Static{
+  visibility:hidden;
+}
+
+.scanlines{
+  opacity: 45%;
+}
+
+
+//A box for my custom div tables - I did finaly use bootstrap and it does work well :)
+.divbox{
+width: 1300px;
+@include middle(auto);
+margin-top: -5%;
+border-radius: 30px;
+}
+
+//Gallery Table styling
+table{
+  margin-left: -130px;
+}
+.tbl{
+  @include middle(auto);
+  @include square(500px);
+}
+
+.tblPic{
+  @include square(150px); 
+}
+
+.divContentBTN{
+@include middle(auto);
+margin-top: 8%; 
+text-align: center;  
+}
+
+
+//This gets rid of the smooth scroll on anchor links
+html {
+  scroll-behavior: auto !important;
+  }
+
+//This is the styling for almost all BACK buttons on the site :)
+.selectorbtn{
+width: 250px;
+height: 100px;
+font-size: $btnHead;
+font-family: inherit;
+background-color: $SecCol;
+color:inherit;
+margin-top: -60px;
+position: absolute;
+}
+.selectorbtn:hover{
+background-color: transparent;
+border-style: solid;
+border-width: thick;
+border-color:  $MainCol;
+color:$MainCol;
+}
+
+.btnLeft{
+  margin-left: 0%; 
+}
+//Custom styling for the button on the Gallery section
+.btnGallery{
+  margin-left: 70%;
+  margin-top: -140px;
+}
+
+.btnRight{
+  margin-left: 65%; 
+}
+
+//These are the styling for the Main menu buttons as well as any other buttons that access menus or pages
+.choosebtn{
+width: 250px;
+height: 100px;
+font-size: $btnHead;
+font-family: inherit;
+background-color: $SecCol;
+color:inherit;
+margin-top: 50%;
+border-radius:50px;
+}
+.choosebtn:hover{
+background-color: transparent;
+border-style: solid;
+border-width: thick;
+border-color:  $MainCol;
+color:$MainCol;
+}
+
+//This is the button class that the drop down gets appened to
+.btnDrop{
+  width: 250px;
+  height: 100px;
+  font-size: $btnHead;
+  font-family: inherit;
+  background-color: $SecCol;
+  color:inherit;
+  margin-top: 50%;
+  border-radius:50px;
+  }
+  .btnDrop:hover{
+  background-color: transparent;
+  border-style: solid;
+  border-width: thick;
+  border-color:  $MainCol;
+  color:$MainCol;
+  }
+
+  //This is the class assigned to the dynamically created dropdown button
+  .btndropped{
+    width: 250px;
+    height: 100px;
+    font-size: $btnHead;
+    font-family: inherit;
+    background-color: $SecCol;
+    color:inherit;
+    margin-top: 50%;
+    margin-left: -130px;
+    border-radius:50px;
+    }
+    .btndropped:hover{
+    background-color: transparent;
+    border-style: solid;
+    border-width: thick;
+    border-color:  $MainCol;
+    color:$MainCol;
+    }
+
+//Cutsom coloums
+.twoCol,.threeCol,.fiveCol{
+  float:left;
+  }
+.col{
+width: 100%;
+}
+.twoCol{
+  width: 50%;
+  }
+.threeCol{
+  width: 33.33%;
+}
+.fiveCol{
+  width: 20%;
+  }
+
+  //Animation
+  .animationBox{
+    position: relative; /* add position relative to .animationBox */
+    width: 700px;
+    height: 200px;
+    background-color: transparent;
+    border: 2px solid yellowgreen;
+    margin-top: 300px;
+    @include middle(auto);
+  }
+  
+  .box1{
+    position: absolute; /* add position absolute to .box1 */
+    left: 0; /* position it in the top left corner */
+    top: 0;
+    @include square(25px);
+    background-color: black; /* set the background color to black */
+    border-radius: 50px;
+  }
+  
+  
+  
+  
+  
+  
+  
+
+

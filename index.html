@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="perconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+    <link rel="stylesheet" href="./Stylesheets/stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/run.js"></script>
+
+    <title>Ice Hockey</title>
+</head>
+
+<!-- I got the aesthetics and images Idea from - 
+https://www.youtube.com/watch?v=8MXA07BZLqo&ab_channel=NiklasZiermann I knew I wanted todo something like this just wasnt exactly sure how to execute it :)  -->
+<body class="bdy">
+    <div class="divcontainer3" id="divcontainer3">
+        <img class="TV-Static" id="gif" src="./images/static-tv.gif" alt="scanlines">
+        <img class="scanlines" src="./images/scanlines.png" alt="scanlines">
+        <img class="bezel" src="./images/bezel.png" alt="scanlines">
+        <div class="divContent">
+          <h1 class="Heading">ICE HOCKEY</h1>
+            <div class="divbox">  
+                <div class="col">
+                    <!-- main home screen buttons used to navigate site -->
+                    <div id="wrapper">
+                        <div class="fiveCol"><button class="choosebtn" onclick="window.location.href='#about'">ABOUT</button></div>
+                        <div class="fiveCol"><button class="choosebtn" onclick="window.location.href='#rules'">RULES</button></div> 
+                        <div class="fiveCol"><button class="choosebtn" onclick="window.location.href='#leafs'">LEAFS</button></div>
+                        <div class="fiveCol"><button class="choosebtn" onclick="window.location.href='News.html'">NEWS</button></div>
+                        <div class="fiveCol"><button class="btnDrop">Other</button></div> 
+
+                    </div>
+                </div>
+            </div>
+            <!-- Animation Box -->
+            <div class="animationBox">
+                <div class="box1"></div>
+            </div>
+            <div class="gap"></div>
+            <div class="section1" id="about">
+                <!-- section 1 about hockey -->
+                <h1 class="Heading">ABOUT HOCKEY</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <p class="ContentPara">What is ice hockey? Ice hockey is a game between two teams who wear skates and compete on an ice rink. 
+                                    It is a 6v6 brutal competition of strength and endurance. Each side consists of 3 forwards and 2 defencement with Goaltender at the back. 
+                                    They play not with a ball but a puck on the ice that gets shot and with sticks made for Ice Hockey - Some shots can come off the stick at 180 km/h -Thats fast !
+                                    Each team has 20 players : </p>
+                                    <ul class="ContentPara">
+                                        <li>4 lines of 3 players - Forwards </li>
+                                        <li>3 lines of 2 players - Defence </li>
+                                        <li>2 Goal Keepers - One backup </li>
+                                    </ul>
+                                    <!-- Quote from Wayne Gretzky -->
+                                    <p style="padding-top: 0px;" class="ContentPara"><i>”A Great Hockey Player Plays Where The Puck Is Going To Be” – Wayne Gretzky</i></p>
+                            </div>
+                            <div class="col-sm  abtImg">
+                                <img class ="abtImg" src="./images/HockeyNet.jpg" /> 
+                            </div>
+                        </div>
+                  </div>
+                <div id="wrapper2">
+                    <button class="selectorbtn btnLeft" id="back" onclick="window.location.href='#divcontainer3'">BACK</button>
+                </div>
+            </div>
+            <div class="gap"></div>
+            <div class="section1" id="rules">
+                <!-- section 2 Rules of hockey -->
+                <h1 class="Heading">RULES OF HOCKEY</h1>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm abtImg">
+                        <img class ="abtImg" src="./images/IceHockey.jpg" />
+                    </div>
+                    <div class="col-sm">
+                        <p class="ContentPara">
+                            The rules of hockey can be quite intimidating but are actually pretty logical and are picked up very quickly to name a few : </p>
+                            <ul class="ContentPara">
+                                <li>Icing - This is when the puck is shot from one end of the rink to the other the whistle is blown and the puck is brough back</li>
+                                <li>Offside - This is when a player crosses the offesive blue line before the puck</li>
+                                <li>Delay of game - This is when the puck is shot out of the area on purpose or by mistake when in the defensive zone</li>
+                            </ul>
+                        <p class="ContentPara">Find out more by clicking the button below</p>
+                        
+                    </div>
+                    <!-- Link to More Rules page -->
+                <div id="wrapper3">
+                    <button class="selectorbtn btnRight" id="back" onclick="window.location.href='rules.html'">MORE</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div>
+            <div class="section1" id="leafs">
+                <!-- section 3 TORONTO MAPLE LEAFS -->
+                <h1 class="Heading">TORONTO MAPLE LEAFS</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <p class="ContentPara">The Toronto Maple Leafs are an NHL team that I support. They are hence the best team (In my Opinion XD).All jokes aside they are an amazing teams
+                                with a lot of young talent and make for an entertaining game every game. Their star players consist of a core 4 Namely - Auston Matthews, John Tavares, Mitch Marner, William Nylander.
+                                These players form the core of the team and this is what the team has been built around for the last 6 years. There have been many dissapointments with this team over the last few years
+                                as with such good young talent they have a lot of expectations. I believe this will be their year. (As I did last year and the year before that!)
+                            </p>
+                        </div>
+                        <div class="col-sm  abtImg">
+                            <img class ="abtImg" src="./images/Maple Leafs.jpg" /> 
+                        </div>
+                <div id="wrapper4">
+                    <button class="selectorbtn btnLeft" id="back" onclick="window.location.href='#divcontainer3'">BACK</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div>
+            <div class="section1" id="gallery">
+                <!-- section 4 Gallery -->
+                <h1 class="Heading">GALLERY</h1>
+                <div class="tbl">
+                    <table>
+                        <tr>
+                            <td><img src="./images/Maple Leafs.jpg" class="tblPic" alt="hockey"></td>
+                            <td><img src="./images/Hockey1.jpg" class="tblPic" alt="hockey"></td>
+                            <td><img src="./images/Hockey2.jpg" class="tblPic" alt="hockey"></td>
+                            <td><img src="./images/Hockey3.jpg" class="tblPic" alt="hockey"></td>
+                            <td><img src="./images/Hockey4.jpg" class="tblPic" alt="hockey"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/Hockey5.jpg" class="tblPic" alt="hockey"></td>
+                            <td><img src="./images/Hockey6.jpg" class="tblPic" alt="hockey"></td>
+                            <td><img src="./images/Hockey7.jpg" class="tblPic" alt="hockey"></td>
+                            <td><img src="./images/Hockey8.jpg" class="tblPic" alt="hockey"></td>
+                            <td><img src="./images/Hockey9.jpg" class="tblPic" alt="hockey"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/HockeyNet.jpg" class="tblPic" alt="hockey"></td>
+                            <td><img src="./images/IceHockey.jpg" class="tblPic" alt="hockey"></td>
+                            <td><img src="./images/Hockey10.jpg" class="tblPic" alt="hockey"></td>
+                            <td><img src="./images/Hockey11.jpg" class="tblPic" alt="hockey"></td>
+                            <td><img src="./images/Hockey12.jpg" class="tblPic" alt="hockey"></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- section 5 Link to newsletter page -->
+                <div id="wrapper5">
+                    <button class="selectorbtn btnGallery" id="back" onclick="window.location.href='#divcontainer3'">BACK</button>
+                </div>
+                    </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/JqueryAnimation.js"></script>
+</body>
+</html>
