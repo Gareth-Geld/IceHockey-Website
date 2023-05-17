@@ -73,6 +73,6 @@ Articles Example -
 
 
 ## Credits
-This project was created by Gareth Geldenhuys.
+This project was created by Gareth Geldenhuys - https://github.com/Gareth-Geld
 
 
